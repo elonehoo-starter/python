@@ -1,9 +1,5 @@
 from __future__ import annotations
 
-from pathlib import Path
-from glob import glob
-
-
 def main() -> None:
     import uvicorn  # noqa: WPS433 (import after path changes)
 
