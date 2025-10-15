@@ -6,7 +6,7 @@ from base_api import health, info
 from shared import greet
 
 
-app = FastAPI(title="example-service")
+app = FastAPI(title="api")
 app.include_router(health)
 app.include_router(info)
 

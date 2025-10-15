@@ -13,18 +13,18 @@ from pathlib import Path
 from glob import glob
 
 
-def _bootstrap_monorepo_paths() -> None:
-    root = Path(__file__).resolve().parent.parent
-    for src in glob(str(root / "packages" / "*" / "src")):
-        if src not in sys.path:
-            sys.path.insert(0, src)
-    for app_src in glob(str(root / "apps" / "*" / "src")):
-        if app_src not in sys.path:
-            sys.path.insert(0, app_src)
+# def _bootstrap_monorepo_paths() -> None:
+#     root = Path(__file__).resolve().parent.parent
+#     for src in glob(str(root / "packages" / "*" / "src")):
+#         if src not in sys.path:
+#             sys.path.insert(0, src)
+#     for app_src in glob(str(root / "apps" / "*" / "src")):
+#         if app_src not in sys.path:
+#             sys.path.insert(0, app_src)
 
 
 def main(argv: list[str] | None = None) -> int:
-    _bootstrap_monorepo_paths()
+    # _bootstrap_monorepo_paths()
     argv = sys.argv[1:] if argv is None else argv
     if not argv:
         print("Usage: python scripts/dev.py [-m module] <path-or-args>")

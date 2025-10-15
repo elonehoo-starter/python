@@ -96,6 +96,10 @@ VS Code tasks:
 - Test all — run all tests
 - HTTP: GET /health — quick health probe
 
+## Documentation
+
+- Managing dependencies in packages (uv): see `docs/managing-dependencies.md`
+
 ## Create a new package (packages)
 
 1) Create a folder: `packages/your-lib/src/your_lib`
