@@ -1,0 +1,30 @@
+# macOS & editors
+.DS_Store
+.idea/
+.vscode/.ropeproject/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg-info/
+.eggs/
+
+# Envs
+.venv/
+venv/
+ENV/
+.env
+.env.*
+
+# Tests
+.pytest_cache/
+.coverage*
+htmlcov/
+
+# Build
+build/
+dist/

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "base-api"
+version = "0.1.0"
+description = "Base FastAPI routes and models for services"
+readme = "README.md"
+authors = [{ name = "Your Name" }]
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["fastapi>=0.111", "pydantic>=2.7"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/base_api"]

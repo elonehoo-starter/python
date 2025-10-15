@@ -1,0 +1,14 @@
+{
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": [
+    "apps",
+    "packages"
+  ],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.extraPaths": [
+    "apps/example-service/src",
+    "packages/example-util/src",
+    "packages/base-api/src"
+  ],
+  "editor.formatOnSave": true
+}
