@@ -4,14 +4,14 @@
     {
       "label": "Dev server (uvicorn)",
       "type": "shell",
-      "command": "python scripts/dev.py -m example_service.run",
+      "command": "uv run python scripts/dev.py -m run",
       "group": "build",
       "problemMatcher": []
     },
     {
       "label": "Test all",
       "type": "shell",
-      "command": "pytest -q",
+      "command": "uv run pytest -q",
       "group": "test",
       "problemMatcher": [
         "$python"

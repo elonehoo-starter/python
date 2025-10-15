@@ -1,4 +1,4 @@
-from example_util import greet
+from shared import greet
 
 
 def test_greet_basic():

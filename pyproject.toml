@@ -10,3 +10,11 @@ line-length = 100
 
 [tool.uv.workspace]
 members = ["apps/*", "packages/*"]
+
+[tool.uv.sources]
+# Map workspace package names so `uv` can resolve them when referenced
+# as dependencies by name in other workspace projects.
+base = { workspace = true }
+shared = { workspace = true }
+# Including api is optional, but harmless and can help when resolving from root
+api = { workspace = true }

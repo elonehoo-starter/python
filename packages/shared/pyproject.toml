@@ -3,7 +3,7 @@ requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "example-util"
+name = "shared"
 version = "0.1.0"
 description = "Example utility package for the monorepo"
 readme = "README.md"
@@ -12,4 +12,4 @@ requires-python = ">=3.9"
 license = { text = "MIT" }
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/example_util"]
+force-include = { "src/shared.py" = "shared.py" }

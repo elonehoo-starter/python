@@ -49,12 +49,12 @@ apps/
 packages/
 	base-api/
 		pyproject.toml
-		src/base_api/routers/
+		src/routers/
 			health.py
 			info.py
 	example-util/
 		pyproject.toml
-		src/example_util/
+		src/shared.py
 			__init__.py
 			core.py
 		tests/

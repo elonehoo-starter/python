@@ -11,3 +11,5 @@ def greet(name: str) -> str:
     clean = name.strip() if name is not None else ""
     target = clean or "there"
     return f"Hello, {target}!"
+
+__all__ = ["greet"]

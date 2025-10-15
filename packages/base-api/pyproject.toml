@@ -3,7 +3,7 @@ requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "base-api"
+name = "base"
 version = "0.1.0"
 description = "Base FastAPI routes and models for services"
 readme = "README.md"
@@ -13,4 +13,5 @@ license = { text = "MIT" }
 dependencies = ["fastapi>=0.111", "pydantic>=2.7"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/base_api"]
+# 扁平化 src：直接将顶层模块与目录包含到 wheel 中
+force-include = { "src/base_api.py" = "base_api.py", "src/routers" = "routers" }

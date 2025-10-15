@@ -21,7 +21,7 @@ def main() -> None:
 
     # Start FastAPI app with auto-reload during development
     uvicorn.run(
-        "example_service.main:app",
+        "main:app",
         host="0.0.0.0",
         port=8000,
         reload=True,
