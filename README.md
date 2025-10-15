@@ -1,4 +1,4 @@
-# starter-python-monorepo
+# starter-python
 
 Starter template for a Python monorepo with FastAPI services in `apps/` and shared libraries in `packages/`.
 
@@ -6,15 +6,15 @@ Starter template for a Python monorepo with FastAPI services in `apps/` and shar
 
 ### GitHub Template
 
-Use this repository as a template from GitHub (Use this template) or fork it and start building your services.
+[Create a repo from this template on GitHub](https://github.com/elonehoo-starter/python/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with a clean git history:
 
 ```bash
-git clone <this-repo-url> my-python-monorepo
-cd my-python-monorepo
+npx degit elonehoo-starter/python my-python-app
+cd my-python-app
 ```
 
 If you use uv for dependency management (recommended):
